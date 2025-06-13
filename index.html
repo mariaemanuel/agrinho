@@ -1,37 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título da Página</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Campo vs Cidade</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao Meu Site</h1>
-    </header>
+  <header>
+    <h1>Campo vs Cidade</h1>
+    <p>Entenda as principais diferenças entre viver na cidade e no campo</p>
+    <button id="toggleTema">Alternar Tema</button>
+  </header>
 
-    <section>
-        <div class="campo">
-            <p>Este é um campo com informações.</p>
-        </div>
-        <div class="cidade">
-            <p>Informações sobre a cidade.</p>
-        </div>
-
-        <div class="button-container">
-            <a href=""https://www.youtube.com/watch?v=EVkdn9viUO8" class="">Cliue Aqui</a>
-            <a href="#" class="">Saiba Mais</a>
-        </div>
-
-        <div class="image-container">
-            <img src="campo.jpg" alt="Imagem 1">
-            <img src="cidade.jpg" alt="Imagem 2">
-        </div>
+  <main>
+    <section class="campo">
+      <h2>Vida no Campo (Sítio)</h2>
+      <p>
+        A vida no campo é marcada pela tranquilidade e contato com a natureza. É comum trabalhar com agricultura e viver em um ambiente mais calmo.
+      </p>
+      <div class="curiosidade">
+        <strong>Curiosidade:</strong> No campo, muitas famílias produzem o próprio alimento, como ovos, leite e verduras.
+      </div>
     </section>
 
-    <footer>
-        &copy; 2025 Meu Site. Todos os direitos reservados.
-    </footer>
+    <section class="cidade">
+      <h2>Vida na Cidade</h2>
+      <p>
+        A vida urbana é agitada, com mais acesso a tecnologia, saúde, lazer e serviços. As pessoas estão sempre com pressa e há muitas opções de trabalho.
+      </p>
+      <div class="curiosidade">
+        <strong>Curiosidade:</strong> Algumas cidades nunca "dormem", funcionando 24 horas por dia, com lojas, metrôs e serviços sempre ativos.
+      </div>
+    </section>
+
+    <section class="galeria">
+      <h2>Galeria: Campo e Cidade</h2>
+      <div class="galeria-container">
+        <div class="imagem"><img src="de noite.jpg" alt="Imagem da cidade 1"></div>
+        <div class="imagem"><img src="campo.jpg" alt="Imagem do campo 1"></div>
+        <div class="imagem"><img src="cidade.webp" alt="Imagem da cidade 2"></div>
+        <div class="imagem"><img src="sitio.jpg" alt="Imagem do sítio"></div>
+        <div class="imagem"><img src="turisticos.avif" alt="Ponto turístico rural"></div>
+        <div class="imagem"><img src="cachoeiras.jpg" alt="Cachoeira no campo"></div>
+      </div>
+    </section>
+
+    <section class="tabela">
+      <h2>Comparação entre Campo e Cidade</h2>
+      <table>
+        <tr>
+          <th>Aspecto</th>
+          <th>Campo</th>
+          <th>Cidade</th>
+        </tr>
+        <tr>
+          <td>Ambiente</td>
+          <td>Natural e calmo</td>
+          <td>Urbano e agitado</td>
+        </tr>
+        <tr>
+          <td>Trabalho</td>
+          <td>Agricultura e pecuária</td>
+          <td>Serviços, indústria, comércio</td>
+        </tr>
+        <tr>
+          <td>Transporte</td>
+          <td>Veículos próprios, estradas rurais</td>
+          <td>Ônibus, metrô, carros</td>
+        </tr>
+        <tr>
+          <td>Qualidade do ar</td>
+          <td>Mais limpo</td>
+          <td>Mais poluído</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="conclusao">
+      <h2>Conclusão</h2>
+      <p>
+        Cada ambiente tem seu valor. A vida no campo oferece paz e natureza, enquanto a cidade traz movimento e oportunidades.
+        O importante é reconhecer os pontos positivos de cada lugar.
+      </p>
+    </section>
+
+    <div class="youtube-botao">
+      <a href="https://www.youtube.com/watch?v=3FIZwdzxNB4" target="_blank">
+        <button>Visitar o YouTube</button>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 — Projeto Educativo: Diferenças entre Campo e Cidade</p>
+  </footer>
+
+  <script>
+    const botao = document.getElementById("toggleTema");
+    botao.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+  </script>
 </body>
 </html>
